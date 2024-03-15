@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+	padding: 40px;
+}
+article {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Divide the container into thirds and thirds */
+    align-items: flex-end;/* Align the content to the bottom */
+	grid-auto-flow: column; /* Set the automatic layout direction to columns */
+	align-items: flex-start; /* Top alignment */
+	align-items: stretch;
+}
+.left-column, .right-column {
+	display: grid; /* Change both left and right columns to grid layout */
+	grid-template-rows: 1fr;
+	align-items: start;/* Align the content to the top */
+}
+	
+.left-column {
+	grid-column: 1; /* The left side accounts for two thirds */
+    width: 90%; /* Set left width */
+	height: 8%;
+}
+	
+.right-column {
+	grid-column: 2; /* The right side accounts for one third */
+}
+
+img {
+    width: 100%;
+    height: 90%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* Divide the container into two columns */
+    grid-column-gap: 20px; /* Add column spacing */
+    align-items: flex-start; /* Align the content to the top */
+    grid-auto-flow: column;/* Set the automatic layout direction to columns */
+}
+
+.left-column-in-container, .right-column-in-container {
+    flex: 1; /* Let the left and right containers fill the remaining space */
+    padding: 10px;
+	height: 50%;
+	margin-top: 5px;
+}
+.left-column-in-container {
+	grid-column: 1 / span 1;/* Left container position */
+}
+
+.right-column-in-container {
+	grid-column: 2 / span 1; /* Right container position */
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom of article */
+}
+h2 {
+    margin-bottom: 2px;/* Set the bottom margin of the title */
+	font-size: 1em;
+	margin-top: 2px;
+}
+
+p {
+    margin-top: 2px; /* Set the top margin of the paragraph */
+	font-size: 1.2em; /* Set the font size of the title to 1.2 times the default size */
+	margin-bottom: -2px;
+	font-family: "Newsreader", serif;
+	font-style: normal;
+}
+.Road{
+	font-size: 2.5em;
+	width: auto;
+	margin-bottom: 2px;
+	margin-top: -50px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+h1 ~ p{
+	text-align: center; /* Center the text within the container horizontally */
+}
+.color{
+	color: orange;
+}
+h1{
+	border-left: 1px solid black; /* Display left border on left and right containers */
+    border-right: 1px solid black; /* Display the right border on the left and right containers */
+	padding-left: 5px;
+	width: 20%;
+	font-size: 1em;
+	text-align: center;
+}
+.Pitts{
+	text-align: right;
+}
