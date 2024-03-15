@@ -12,7 +12,7 @@ article {
     align-items: flex-end;/* Align the content to the bottom */
 	grid-auto-flow: column; /* Set the automatic layout direction to columns */
 	align-items: flex-start; /* Top alignment */
-	align-items: stretch;
+
 }
 .left-column, .right-column {
 	display: grid; /* Change both left and right columns to grid layout */
@@ -23,18 +23,18 @@ article {
 .left-column {
 	grid-column: 1; /* The left side accounts for two thirds */
     width: 90%; /* Set left width */
-	height: 8%;
+	height: auto;
 }
 	
 .right-column {
 	grid-column: 2; /* The right side accounts for one third */
 }
-
 img {
+	padding-top:20px;
     width: 100%;
     height: 90%;
+	margin-bottom: -5%;
 }
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;/* Divide the container into two columns */
@@ -92,8 +92,8 @@ h1{
 	border-left: 1px solid black; /* Display left border on left and right containers */
     border-right: 1px solid black; /* Display the right border on the left and right containers */
 	padding-left: 5px;
-	width: 20%;
-	font-size: 1em;
+	width: 200px;
+	font-size: 0.8em;
 	text-align: center;
 }
 .Pitts{
